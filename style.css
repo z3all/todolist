@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #ff7e5f, #ffcca5);
+    padding: 10px;
+}
+
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    padding: 40px 30px 70px;
+    margin: 50px auto 20px;
+    border-radius: 15px;
+}
+
+.todo-app h2 {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b); /* Background khusus */
+    padding: 10px; /* Tambahkan padding agar teks terlihat lebih baik */
+    border-radius: 8px; /* Opsional: tambahkan border-radius untuk sudut melengkung */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #d2d2d2;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+
+button {
+    border: 0;
+    outline: 0;
+    padding: 16px 50px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 15px; /* Perkecil ukuran teks tugas */
+    padding: 10px 8px; /* Sesuaikan padding */
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Pisahkan teks tugas dan tanggal */
+    align-items: center;
+}
+
+ul li small {
+    font-size: 10px; /* Perkecil lagi ukuran teks tanggal */
+    color: rgba(0, 0, 0, 0.5); /* Transparansi pada teks tanggal */
+    margin-left: 10px;
+}
