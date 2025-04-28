@@ -63,18 +63,34 @@ button {
 
 ul li {
     list-style: none;
-    font-size: 15px; /* Perkecil ukuran teks tugas */
+    font-size: 15px; /* Ukuran teks tugas */
     padding: 10px 8px; /* Sesuaikan padding */
     user-select: none;
     position: relative;
     cursor: pointer;
     display: flex;
-    justify-content: space-between; /* Pisahkan teks tugas dan tanggal */
+    justify-content: space-between; /* Pisahkan teks tugas dan elemen lainnya */
     align-items: center;
 }
 
 ul li small {
-    font-size: 10px; /* Perkecil lagi ukuran teks tanggal */
+    font-size: 10px; /* Ukuran teks tanggal */
     color: rgba(0, 0, 0, 0.5); /* Transparansi pada teks tanggal */
-    margin-left: 10px;
+    margin-right: 10px; /* Jarak antara tanggal dan tombol silang */
+    order: 1; /* Pastikan tanggal berada sebelum tombol silang */
+}
+
+ul li span {
+    font-size: 18px;
+    color: #ff0000;
+    cursor: pointer;
+    order: 2; /* Pastikan tombol silang berada setelah tanggal */
+}
+
+ul li p {
+    margin: 0;
+    flex: 1; /* Isi ruang yang tersedia */
+    word-wrap: break-word; /* Pecah kata jika terlalu panjang */
+    white-space: normal; /* Izinkan teks untuk membungkus ke baris berikutnya */
+    overflow-wrap: break-word; /* Pecah kata jika terlalu panjang */
 }
